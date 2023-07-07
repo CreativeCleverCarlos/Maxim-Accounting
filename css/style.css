@@ -1,0 +1,305 @@
+/* Box Model Hack */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited{
+  color: black;
+}
+
+a:active{
+  text-decoration: none;
+}
+
+html{
+  padding-bottom: 100px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/**
+Header altering
+**/
+header {
+
+  background-color:rgba(36, 151, 230, 0.37);
+}
+
+#title_Navigation{
+  display: grid;
+  place-items: center;
+  padding: 1vh 0;
+}
+
+header ul .navigation{
+  display: inline-grid;
+  padding-left: 10%;
+  
+}
+.header_div .navigation{
+  font-size: 1.2em;
+}
+
+
+h1{
+    font-size: 2.0em;
+  }
+
+  li a:hover{
+    color: white;
+    transition: .5s;
+  }
+
+/********************************************
+main
+*********************************************/
+
+
+.consult-picture{
+  height: 50vh;
+  width: 100%;
+}
+
+.group-photo{
+  display: none;
+}
+main{
+  background-color: rgba(39, 187, 245, 0.15);
+}
+
+main h2{
+  padding: 3% 5%;
+  text-align: center;
+}
+
+main h3{
+  padding: 3% 5%;
+  text-align: center;
+}
+
+main p{
+  padding: 0 5%;
+  line-height: 150%;
+}
+/**
+footer
+**/
+
+footer {
+  background-color: rgba(212, 242, 251, 0.4)
+}
+
+footer h3{
+  padding: 3% 5%;
+  text-align: center;
+}
+
+footer > div{
+  padding: 3% 5%;
+}
+
+fieldset{
+  width: 100%;
+  float: left;
+  border: 0;
+}
+
+
+#text-area-box{
+  width: 70%;
+  height: 40%;
+}
+
+
+.user-input-box{
+
+  /** can just put this back if it doesn't work
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2vh 0;
+  width: 50%;
+  **/
+}
+
+.beside-each-other{
+  float: left;
+  width: 50%;
+  padding-bottom: 2%;
+}
+
+#Email{
+  float: left;
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+#text-area-box{
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+input[type=text]{
+  width: 98%;
+  height: 50px;
+}
+
+input[type=email]{
+  width: 100%;
+  height: 50px;
+}
+
+#button{
+  width: 10em;
+  height: 3em;
+  margin-top: 2%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/******************************************************
+Media query for tablets
+******************************************************/
+
+/*********************
+phone media query
+**********************/
+
+@media(min-width:450px){
+
+  header ul .navigation{
+    display: inline-grid;
+    padding-left: 15%;
+    
+}
+
+}
+/************************
+Tablet media querry
+*************************/
+@media(min-width:700px){
+  header ul .navigation{
+    display: inline-grid;
+    padding-left: 15%;
+  }  
+
+  .group-photo{
+    height: 40vh;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ body main p{
+  padding: 2% 5%
+ }
+
+ h1{
+  font-size: 2.6em;
+ }
+
+ #header_navigation li a{
+  font-size: 1.5em;
+ }
+
+ h2{
+  font-size: 1.8em;
+ }
+
+ h3{
+  font-size: 2em;
+ }
+
+ p{
+  font-size: 1.5em;
+ }
+
+}
+/**
+Desktop media query
+**/
+@media(min-width:1080px){
+  header ul .navigation{
+    display: inline-grid;
+    padding-left: 20%;
+  } 
+
+  .consult-picture{
+    height: 75vh;
+    width: 95%;
+    padding-left: 5%;
+   
+   
+  }
+
+  .group-photo{
+    height: 50vh;
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/**
+ABOUT Page
+**/
+
+.About-what-we-do-picture{
+  height: 50vh;
+  width: 55%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**
+Services Page
+**/
+
+.bookeeping-image{
+  height: 60vh;
+  width: 55%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
