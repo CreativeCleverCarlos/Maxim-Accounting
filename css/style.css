@@ -260,7 +260,7 @@ Desktop media query
 @media(min-width:1080px){
   header ul .navigation{
     display: inline-grid;
-    padding-left: 20%;
+    padding-left: 10%;
   } 
 
   .consult-picture{
@@ -280,12 +280,31 @@ Desktop media query
   }
 }
 
+
 /**
 ABOUT Page
 **/
 
 .About-what-we-do-picture{
-  height: 50vh;
+  height: 30vh;
+  width: 55%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media(min-width:1300px){
+  .About-what-we-do-picture{
+    width: 30%;
+  }
+}
+
+/**
+Bookkeeping Services Page
+**/
+
+.bookeeping-image{
+  height: 30vh;
   width: 55%;
   display: block;
   margin-left: auto;
@@ -293,13 +312,47 @@ ABOUT Page
 }
 
 /**
-Services Page
+Tax solutions page
 **/
 
-.bookeeping-image{
-  height: 60vh;
+.business-hands-image{
+  height: 30vh;
   width: 55%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media(min-width:1300px){
+  .business-hands-image{
+    width: 30%;
+  }
+}
+
+/**
+Accounting services page
+**/
+
+.accounting-services-image{
+  height: 30vh;
+  width: 55%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media(min-width:1300px){
+  .accounting-services-image{
+    width: 30%;
+  }
+}
+
+/**
+Bookkeeping page
+**/
+
+@media(min-width:1300px){
+  .bookeeping-image{
+    width: 30%;
+  }
 }
