@@ -111,6 +111,12 @@ main h3{
   text-align: center;
 }
 
+footer h2{
+  padding: 3% 5%;
+  text-align: center;
+}
+
+
 main p{
   padding: 0 5%;
   line-height: 150%;
